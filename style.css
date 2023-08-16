@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+
+:root {
+    --roxo-principal: #483d8b;
+    --roxo-secundario: #6652E2;
+    --roxo-mais-claro: #6652e2;
+    --roxo-claro: #8679b1;
+    --roxo-mais-claro: #a499c4;
+    --roxo-quase-branco: #c2bad8;
+    --branco-fundo: #e0dceb;
+
+    --cor-fundo-INPUTS: #f0f0f0;
+    --cinza-claro-bordas-INPUTS: #c2bad8;
+
+    --cinza-quase-preto: #343434;
+    --cinza-escuro-TEXTOS: #7b7b7b;
+    --cinza: #8e8e8e;
+}
+
+.container-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.card-details {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--branco-fundo);
+    background: var(--roxo-claro);
+    border-radius: 12px;
+}
+
+.top-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+
+.infos {
+
+}
+
+.model {
+    
+}
+
+.--card-active {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-details {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+}
+
+ion-icon.--icon {
+    font-size: 26px;
+    border-radius: 50px;
+    padding: .5rem;
+    color: var(--roxo-principal);
+    background: var(--cor-fundo-INPUTS);
+}
+
+.box-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
+    padding: .4rem;
+    border: solid 2px var(--roxo-principal);
+    background: var(--branco-fundo);
+}
+.title-detail {
+    color: var(--roxo-principal);
+    font-size: 18px;
+}
+.text-detail {
+    color: var(--cinza-quase-preto);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.card-details.--card-active .box-details {
+    display: flex;
+}
