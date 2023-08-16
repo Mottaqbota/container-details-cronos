@@ -28,10 +28,11 @@
 
 .container-details {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    gap: 2rem;
     padding: 2rem;
 }
 
@@ -86,6 +87,7 @@ ion-icon.--icon {
     font-size: 26px;
     border-radius: 50px;
     padding: .5rem;
+    transition: all ease .2s;
     color: var(--roxo-principal);
     background: var(--cor-fundo-INPUTS);
 }
@@ -114,4 +116,7 @@ ion-icon.--icon {
 
 .card-details.--card-active .box-details {
     display: flex;
+}
+.card-details.--card-active ion-icon {
+    transform: rotate(180deg);
 }
